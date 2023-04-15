@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+}
+
+:root{
+    /*primario*/
+    --Linear-gradient/*(active input border)*/: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+    --Red /*(input errors)*/: hsl(0, 100%, 66%);
+
+    /*neutro*/
+    --White: hsl(0, 0%, 100%);
+    --Light-grayish-violet: hsl(270, 3%, 87%);
+    --Dark-grayish-violet: hsl(279, 6%, 55%);
+    --Very-dark-violet: hsl(278, 68%, 11%);
+}
+
+body{
+    background-image: url(images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.base{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.primario{
+    width: 30%;
+    height: 550px;
+}
+
+.cartaoFrente{
+    color: var(--White);
+    background-image: url(images/bg-card-front.png);
+    background-size: 310px;
+    background-repeat: no-repeat;
+    width: 310px;
+    height: 170px;
+    position: absolute;
+    top: 120px;
+    left: 160px;
+    z-index: 1;
+    box-shadow: -3px 20px 20px 1px hsla(279, 6%, 55%, 0.329);;
+    border-radius: 9px;
+}
+
+.img-card{
+    width: 60px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.card_alinhamento{
+    position: relative;
+    top: 55px;
+    left: 20px;
+    font-size: 23.5px;
+    font-weight: 500;
+}
+
+.nomeCard{
+    top: 70px;
+    left: 20px;
+    font-size: 11px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.dataCard{
+    top: 54px;
+    left: 245px;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.cartaoVerso{
+    position: relative;
+    color: var(--White);
+    background-image: url(images/bg-card-back.png);
+    background-size: 310px;
+    background-repeat: no-repeat;
+    width: 310px;
+    height: 170px;
+    position: absolute;
+    top: 320px;
+    left: 210px;
+    z-index: 1;
+    box-shadow: -3px 20px 20px 1px hsla(279, 6%, 55%, 0.329);;
+    border-radius: 9px;
+}
+
+.alinhamento_cdv{
+    position: relative;
+    top: 73px;
+    left: 230px;
+}
+
+.secundario{
+    position: fixed;
+    width: 60%;
+    height: 609px;
+    background-color: var(--White);
+    left: 383.5px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+    margin-left: 180px;
+}
+
+.form_organizador{
+    display: flex;
+    flex-direction: column;
+}
+
+.form_organizador2{
+    display:flex;
+}
+
+.dadoCart{
+    display: flex;
+}
+
+.dado{
+    display: flex;
+    flex-direction: row;
+}
+
+.paralelo{
+    display: flex;
+    flex-direction: column;
+}
+
+#nomeCart{
+    margin-top: 2px;
+    width: 300px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--Dark-grayish-violet);
+
+}
+
+#numerCart{
+    margin-top: 2px;
+    width: 300px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--Dark-grayish-violet);
+}
+.alinhar{
+    display: flex;
+}
+
+#mesCart{
+    margin-top: 2px;
+    width: 70px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--Dark-grayish-violet);
+}
+
+#anoCart{
+    margin-top: 2px;
+    width: 70px;
+    height: 30px;
+    margin-left: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--Dark-grayish-violet);
+    
+}
+
+#cdvCart{
+    margin-top: 2px;
+    width: 120px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--Dark-grayish-violet);
+}
+
+.botao{
+    width: 315px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: var(--Very-dark-violet);
+    color: var(--White);
+    margin-top: 30px;
+    border: none;
+}
+
+
+.dado_titulo{
+    margin-top: 15px;
+    font-size: 15px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.alx20{
+    margin-left: 20px;
+}
+
+.img-card{
+    position: relative;
+}
+
+.concluido{
+    position: fixed;
+    top: 0;
+    right: 5px;
+    left: 383.5px;
+    background-color: white;
+    width: 70.5%;
+    height: 400px;
+    padding-top: 250px;
+    visibility: hidden;
+}
+
+.concluido_interno{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagem_confirmar{
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+.obrigado{
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.detalhes{
+    margin-bottom: 30px;
+    font-size: 12px;
+    color: var(--Dark-grayish-violet);
+}
+
+.botaoConcluido{
+    width: 270px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: var(--Very-dark-violet);
+    color: var(--White);
+    border: none;
+}
